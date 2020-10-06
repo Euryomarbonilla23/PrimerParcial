@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PrimerParcial.UI.Registro;
 
 namespace PrimerParcial
 {
@@ -23,6 +24,12 @@ namespace PrimerParcial
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void rCiudades_Click(object sender, RoutedEventArgs e)
+        {
+            rCiudades rp = new rCiudades();
+            rp.ShowDialog();
         }
     }
 }
